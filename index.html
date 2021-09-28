@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Weather Dashboard</title>
+  </head>
+
+
+
+  <body>
+    <header>
+      <div class="col-md-12">
+        <h3 class="text-center">Weather Dashboard</h3>
+      </div>
+    </header>
+
+
+    <main class="container-fluid">
+      <div class="row">
+          <div class="row">
+            <aside class="col-md-4">
+              <label>Search for a City:</label> 
+              <input type="text" id="citySearch" name="citySearch">
+              <button type="button" class="searchBtn btn btn-success btn-block">Search</button> 
+              <button type="button" class="btn btn-success btn-block">Recent Cities</button>
+            </aside>
+
+            <section class="col-md-8">
+              <!-- all this should be an empty div until a city is searched for -->
+              <h3>City (date)</h3>
+              <ul>
+                <li class="list-item">Temp</li>
+                <li class="list-item">Wind</li>
+                <li class="list-item">Humidity</li>
+                <li class="list-item">UV Index</li>
+              </ul>
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="card">
+                    <div class="card-block">
+                      <h5 class="card-title">Tomorrow Date</h5>
+                      <li class="card-text">IMG</li>
+                      <li class="card-text">Temp</li>
+                      <li class="card-text">Wind</li>
+                      <li class="card-text">Humidity</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card">
+                    <div class="card-block">
+                      <h5 class="card-title">Tomorrow Date</h5>
+                      <li class="card-text">IMG</li>
+                      <li class="card-text">Temp</li>
+                      <li class="card-text">Wind</li>
+                      <li class="card-text">Humidity</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card">
+                    <div class="card-block">
+                      <h5 class="card-title">Tomorrow Date</h5>
+                      <li class="card-text">IMG</li>
+                      <li class="card-text">Temp</li>
+                      <li class="card-text">Wind</li>
+                      <li class="card-text">Humidity</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card">
+                    <div class="card-block">
+                      <h5 class="card-title">Tomorrow Date</h5>
+                      <li class="card-text">IMG</li>
+                      <li class="card-text">Temp</li>
+                      <li class="card-text">Wind</li>
+                      <li class="card-text">Humidity</li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card">
+                    <div class="card-block">
+                      <h5 class="card-title">Tomorrow Date</h5>
+                      <li class="card-text">IMG</li>
+                      <li class="card-text">Temp</li>
+                      <li class="card-text">Wind</li>
+                      <li class="card-text">Humidity</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        
+      </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
