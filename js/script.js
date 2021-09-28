@@ -4,9 +4,10 @@
 // need a searchHistory function that adds a new button each time a city is searched for up to 8
 var requestWeather = "some link";
 var searchButton = $('.searchBtn');
-var openWeatherKey = "db932346e7591a074277a543296e18b3";
+var openWeatherKey = "";
 
 function searchCity(event) {
+  //  OpenWeather Onecall API does not allow a query based on city, have to make a current weather call first to return lat/lon for the city then rerun an API request for that lat/lon
   var textInput = $("#citySearch")[0].value;
 
   console.log(event);
