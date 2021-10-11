@@ -7,21 +7,22 @@ function init() {
   displayHistory();
 }
 
+function weatherURL(queryValue) {
+  return "https://api.openweathermap.org/data/2.5/weather?q=" + queryValue + "&appid=" + openWeatherKey + "&units=imperial"
+}
+
 function searchCity(event) {
   //  OpenWeather Onecall API does not allow a query based on city, have to make a current weather call first to return lat/lon for the city then rerun an API request for that lat/lon
   var textInput = $("#citySearch")[0].value;
   var buttonValue = event.target.innerText;
-  var displayEverything = $("section");
-
 
   if (textInput) {
-    requestWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + textInput + "&appid=" + openWeatherKey + "&units=imperial";
-    displayEverything.css("display", "initial");
+    requestWeather = weatherURL(textInput);
   }
   else {
-    requestWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + buttonValue + "&appid=" + openWeatherKey + "&units=imperial";
-    displayEverything.css("display", "initial");
+    requestWeather = weatherURL(buttonValue);
   }
+  $("section").css("display", "initial");
 
   $.ajax({
     url: requestWeather,
