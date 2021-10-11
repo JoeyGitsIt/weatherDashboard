@@ -1,0 +1,54 @@
+header {
+  background-image: linear-gradient(to right, darkblue, indigo);
+  padding: 7px 0px;
+  color: white;
+  /* linear-gradient(to right, blue, purple) 1; */
+}
+
+label {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+#citySearch {
+  margin-bottom: 8px;
+  /* padding-bottom: 10px; */
+}
+
+.btn.searchBtn {
+  background-color: deepskyblue;
+  font-weight: 500;
+}
+
+.btn.searchBtn:hover{
+  background-color: dodgerblue;
+}
+
+.btn.historyBtn {
+  background-color: lightslategrey;
+  color: black;
+  font-weight: 500;
+  border-color: lightslategrey;
+}
+
+.btn.historyBtn:hover {
+  background-color: slategray;
+  color: black;
+  font-weight: 500;
+  border-color: lightslategrey;
+}
+
+.card-block {
+  background-color: darkslategray;
+  color: white;
+}
+
+ul {
+  
+}
+
+section section {
+  padding: 7px;
+  border: 5px solid black;
+}
+
