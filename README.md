@@ -4,4 +4,4 @@ Uses data from Open Weather API calls to display current weather data as well as
 
 https://joeygitsit.github.io/weatherDashboard/
 
-![Screenshot](./assets/screenshot.png)
+![Screenshot](./assets/Screenshot.png)
