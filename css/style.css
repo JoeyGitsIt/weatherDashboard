@@ -1,12 +1,21 @@
+html {
+  font-size: 110%;
+}
+
 header {
   background-image: linear-gradient(to right, darkblue, indigo);
   padding: 7px 0px;
+  margin-bottom: 10px;
   color: white;
   /* linear-gradient(to right, blue, purple) 1; */
 }
 
 label {
   font-size: 25px;
+  font-weight: bolder;
+}
+
+#cityDate {
   font-weight: bolder;
 }
 
@@ -38,17 +47,35 @@ label {
   border-color: lightslategrey;
 }
 
-.card-block {
-  background-color: darkslategray;
-  color: white;
-}
-
-ul {
-  
-}
-
 section section {
   padding: 7px;
   border: 5px solid black;
+}
+
+section ul {
+  padding-left: 0px;
+}
+
+ul li {
+  padding: 5px;
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+#fiveDay {
+  margin-left: 0px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.card-block {
+  background-color: darkslategray;
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.card-text {
+  padding: 7px 0;
 }
 

@@ -26,16 +26,18 @@
     </header>
 
     <main class="container-fluid">
-      <div class="row">
-          <div class="row">
-            <aside class="col-md-4">
-              <label>Search for a City:</label> 
-              <br>
-              <input type="text" class="btn-block" id="citySearch" name="citySearch" placeholder="City Name">
-              <button type="button" class="searchBtn btn btn-success btn-block">Search</button> 
-            </aside>
+      <!-- <div class="row"> -->
+        <div class="row" >
+          <!-- style="width:75%" -->
+          <aside class="col-md-2">
+            <label>Search for a City:</label> 
+            <br>
+            <input type="text" class="btn-block" id="citySearch" name="citySearch" placeholder="City Name">
+            <button type="button" class="searchBtn btn btn-success btn-block">Search</button> 
 
-            <section class="col-md-8">
+          </aside>
+
+            <section class="col">
               <!-- all this should be an empty div until a city is searched for -->
               <section>
                 <h3 id="cityDate">City (date)</h3>
@@ -46,6 +48,7 @@
                   <li class="list-item" id="cityUV">UV Index: </li>
                 </ul>
               </section>
+              <div class="row" id="fiveDay">5-Day Forecast:</div>
               <div class="row">
                 <div class="col">
                   <div class="card">
